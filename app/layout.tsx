@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { acme } from "./font";
+import NavBar from "@/components/section/nav-bar";
+import Footer from "@/components/section/footer";
 
 export const metadata: Metadata = {
   title: "Explorar Portfolio",
@@ -16,7 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased bg-[#010417]`}>{children}</body>
+      <body
+        className={` ${acme.className} text-white antialiased bg-[#010417] p-8 md:p-14 lg:p-[72px] space-y-12 lg:space-y-24`}
+      >
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
