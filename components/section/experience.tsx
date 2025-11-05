@@ -1,5 +1,4 @@
 import { Timeline } from "@/components/ui/timeline";
-import Image from "next/image";
 
 const Experience = () => {
   const data = [
@@ -198,7 +197,7 @@ const Experience = () => {
     // },
   ];
   return (
-    <div className="relative w-full overflow-clip">
+    <div className="relative w-full overflow-clip max-w-[1288px]  m-auto">
       <Timeline data={data} />
     </div>
   );

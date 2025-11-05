@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export const StickyScroll = ({
   content,
@@ -11,6 +12,8 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
+    liveLink: string;
+    githubLink: string;
     content?: React.ReactNode | any;
   }[];
   contentClassName?: string;
@@ -64,13 +67,13 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="relative flex h-[30rem] scrollbar-hide justify-center space-x-10 overflow-y-auto rounded-md lg:p-10"
+      className="relative flex h-[30rem] scrollbar-hide justify-center  lg:gap-10 space-x-10 overflow-y-auto rounded-md lg:p-4"
       ref={ref}
     >
-      <div className="div relative flex items-start px-4">
-        <div className="max-w-2xl">
+      <div className="div relative flex items-start px-4 lg:w-2/5 m-0!">
+        <div className="w-full">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
+            <div key={item.title + index} className="my-20 w-full ">
               <motion.h2
                 initial={{
                   opacity: 0,
@@ -89,13 +92,28 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg mt-10 max-w-sm text-slate-300"
+                className="text-kg mt-10 sm:max-w-sm lg:max-w-full text-slate-300"
               >
                 {item.description}
               </motion.p>
+              <div className="py-4 space-x-3">
+                <Link
+                  href={item.githubLink}
+                  className="text-kg mt-10 max-w-sm text-slate-300"
+                >
+                  Live link
+                </Link>
+
+                <Link
+                  href={item.githubLink}
+                  className="text-kg mt-10 max-w-sm text-slate-300"
+                >
+                  Github link
+                </Link>
+              </div>
             </div>
           ))}
-          <div className="h-40" />
+          <div className="h-40 hidden lg:block" />
         </div>
       </div>
       <div

@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="h-[80vh] bg-[url(/background.jpg)] bg-cover bg-center rounded-4xl flex flex-col justify-between pt-10">
+    <div className="h-[80vh] bg-[url(/background.jpg)] max-w-[1288px]  m-auto bg-cover bg-center rounded-4xl flex flex-col justify-between pt-10">
       <div className="flex flex-col w-full gap-8 ">
         <div className="bg-[#010417] py-4 px-8 self-end -mr-8 rounded-[64px]">
           God is the greatest

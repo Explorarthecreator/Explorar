@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${acme.className} text-white antialiased bg-[#010417] overflow-x-clip`}
+        className={` ${acme.className} text-white antialiased bg-[#010417] overflow-x-clip py-10`}
       >
         <NavBar />
         {children}
