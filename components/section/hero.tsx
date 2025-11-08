@@ -1,6 +1,8 @@
+import { karla } from "@/app/font";
+
 const Hero = () => {
   return (
-    <div className="h-[80vh] bg-[url(/background.jpg)] max-w-[1288px]  m-auto bg-cover bg-center rounded-4xl flex flex-col justify-between pt-10">
+    <div className="h-[70vh] lg:h-[80vh] bg-[url(/background.jpg)] max-w-[1288px]  m-auto bg-cover bg-center rounded-4xl flex flex-col justify-between pt-10">
       <div className="flex flex-col w-full gap-8 ">
         <div className="bg-[#010417] py-4 px-8 self-end -mr-8 rounded-[64px]">
           God is the greatest
@@ -15,7 +17,9 @@ const Hero = () => {
             </h1>
           </div>
 
-          <p className="text-[#B7B7B7] text-xs md:text-sm lg:text-lg">
+          <p
+            className={`text-[#B7B7B7] text-xs md:text-sm lg:text-lg ${karla.className}`}
+          >
             A software developer creates and maintains applications, websites,
             or systems that meet user needs. They write and test code to ensure
             programs work correctly and efficiently. Developers also
@@ -26,7 +30,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="bg-[#010417] rounded-3xl h-25 w-56 self-end -mr-5"> </div>
+      <div className="bg-[#010417] rounded-3xl h-25 w-56 self-end -mr-5 hidden lg:block">
+        {" "}
+      </div>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { karla } from "@/app/font";
 import { Timeline } from "@/components/ui/timeline";
 
 const Experience = () => {
@@ -12,7 +13,7 @@ const Experience = () => {
           <p className="mb-8 lg:text-3xl  font-normal text-white  ">
             July 2023 - Present
           </p>
-          <div className="grid  gap-4">
+          <div className={`grid  gap-4 ${karla.className}`}>
             <p className="text-sm lg:text-xl">
               Designed and developed responsive websites and web applications
               for clients across various industries using Next.js, React,
@@ -45,7 +46,7 @@ const Experience = () => {
           <p className="mb-8 lg:text-3xl  font-normal text-white  ">
             April 2025 - September 2025
           </p>
-          <div className="grid  gap-4">
+          <div className={`grid  gap-4 ${karla.className}`}>
             <p className="text-sm lg:text-xl">
               Develop, and maintain Fixa&apos;s HRM and Payroll Platforms and
               Uphold best practices for coding, testing, and deployment.
@@ -80,7 +81,7 @@ const Experience = () => {
           <p className="mb-8 lg:text-3xl  font-normal text-white  ">
             May 2024 - April 2025
           </p>
-          <div className="grid  gap-4">
+          <div className={`grid  gap-4 ${karla.className}`}>
             <p className="text-sm lg:text-xl">
               Collaborated with cross-functional teams to develop and implement
               technical solutions and worked closely with UX/UI designers to
@@ -114,7 +115,7 @@ const Experience = () => {
           <p className="mb-8 lg:text-3xl  font-normal text-white  ">
             July 2024 - August 2024
           </p>
-          <div className="grid  gap-4">
+          <div className={`grid  gap-4 ${karla.className}`}>
             <p className="text-sm lg:text-xl">
               Lead the front-end team of over 25 front-end developers in
               developing an MVP - Telex (Telex keeps you informed on events like
