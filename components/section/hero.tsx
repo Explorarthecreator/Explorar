@@ -1,11 +1,23 @@
 import { karla } from "@/app/font";
+import { Github, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <div className="h-[70vh] lg:h-[80vh] bg-[url(/background.jpg)] max-w-[1288px]  m-auto bg-cover bg-center rounded-4xl flex flex-col justify-between pt-10">
       <div className="flex flex-col w-full gap-8 ">
-        <div className="bg-[#010417] py-4 px-8 self-end -mr-8 rounded-[64px]">
-          God is the greatest
+        <div className="bg-[#010417] py-4 pr-8 pl-4 self-end -mr-8 rounded-[64px] ">
+          <div className="flex items-center gap-2 bg-[#1C3AFF] p-2 rounded-full *:bg-black *:rounded-full *:p-3 *:hover:scale-110 *:hover:ease-in *:hover:duration-200">
+            <Link href={""} className="">
+              <Github />
+            </Link>
+            <Link href={""} className="">
+              <Twitter />
+            </Link>
+            <Link href={""} className="">
+              <Linkedin />
+            </Link>
+          </div>
         </div>
         <div className="bg-[#010417] py-10 px-8 -ml-8 self-start w-11/12 md:w-[70%] rounded-4xl space-y-6">
           <div>
