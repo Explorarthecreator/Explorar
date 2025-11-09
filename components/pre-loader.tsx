@@ -15,7 +15,7 @@ const PreLoader = () => {
         setIsloading(false);
         document.body.style.overflow = "";
       }, 1000);
-    }, 3000);
+    }, 2500);
 
     return () => {
       clearTimeout(timer);

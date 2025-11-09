@@ -15,7 +15,7 @@ const Footer = () => {
           <h1 className="text-[#C0C0C0] text-2xl">Fred-Adeji 2025</h1>
           <div className="space-x-2">
             <Link href={"#"}>Github</Link>
-            <Link href={"#"}>Github</Link>
+            {/* <Link href={"#"}>Github</Link> */}
           </div>
           <div className="bg-[#161616] border border-[#262626] rounded-[14px] py-1 px-4 flex items-center gap-2">
             <div className="bg-[#1C3AFF] h-2 w-2 rounded-full"></div>

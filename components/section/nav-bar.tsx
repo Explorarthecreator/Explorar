@@ -6,6 +6,8 @@ const NavBar = () => {
       <div className=" rounded-full p-4">
         <p
           className={`${pacifico.className} text-center text-4xl animate-pulse`}
+          data-aos="zoom-out-down"
+          data-aos-delay="5300"
         >
           Explorar
         </p>

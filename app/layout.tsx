@@ -4,6 +4,7 @@ import { acme } from "./font";
 import NavBar from "@/components/section/nav-bar";
 import Footer from "@/components/section/footer";
 import PreLoader from "@/components/pre-loader";
+import AOSInitializer from "@/components/Aos-initializer";
 
 export const metadata: Metadata = {
   title: "Explorar Portfolio",
@@ -25,6 +26,7 @@ export default function RootLayout({
       >
         <PreLoader />
         <NavBar />
+        <AOSInitializer />
         {children}
         <Footer />
       </body>
