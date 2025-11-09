@@ -3,6 +3,7 @@ import "./globals.css";
 import { acme } from "./font";
 import NavBar from "@/components/section/nav-bar";
 import Footer from "@/components/section/footer";
+import PreLoader from "@/components/pre-loader";
 
 export const metadata: Metadata = {
   title: "Explorar Portfolio",
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={` ${acme.className} text-white antialiased bg-[#010417] overflow-x-clip py-10`}
       >
+        <PreLoader />
         <NavBar />
         {children}
         <Footer />

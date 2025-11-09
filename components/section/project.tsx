@@ -45,8 +45,6 @@ const Project = () => {
       >
         <h1 className="text-center text-3xl lg:text-6xl">Projects</h1>
 
-        {/* <h1>erelrkrlerk</h1> */}
-
         {projects.map((project, index) => (
           <ScrollStackItem
             itemClassName="bg-white text-black lg:grid lg:grid-cols-2 lg:gap-10"
