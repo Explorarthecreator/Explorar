@@ -21,7 +21,8 @@ const Hero = () => {
             data-aos-delay="4900"
           >
             <Link
-              href={""}
+              href={"https://github.com/Explorarthecreator"}
+              target="_blank"
               className=""
               data-aos="fade-down"
               data-aos-delay="5100"
@@ -29,7 +30,8 @@ const Hero = () => {
               <Github />
             </Link>
             <Link
-              href={""}
+              href={"https://x.com/AdejiFred"}
+              target="_blank"
               className=""
               data-aos="fade-up"
               data-aos-delay="5100"
@@ -37,7 +39,10 @@ const Hero = () => {
               <Twitter />
             </Link>
             <Link
-              href={""}
+              href={
+                "https://www.linkedin.com/in/emmanuel-onose-fred-adeji-b69aaa207/"
+              }
+              target="_blank"
               className=""
               data-aos="fade-down"
               data-aos-delay="5100"
