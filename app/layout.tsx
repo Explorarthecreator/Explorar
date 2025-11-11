@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "Emmanuel Fred-Adeji Portfolio",
     images: [
       {
-        url: "https://explorar-five.vercel.app/og_image.jpg",
+        url: "https://explorar-five.vercel.app/og_image.png",
         width: 1200,
         height: 630,
         alt: "Emmanuel Fred-Adeji - Frontend Developer Portfolio",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     description:
       "Building scalable web apps with Next.js, React, and TypeScript for global clients in Africa, US & UK.",
     creator: "@AdejiFred",
-    images: ["https://explorar-five.vercel.app/og_image.jpg"],
+    images: ["https://explorar-five.vercel.app/og_image.png"],
   },
 };
 export default function RootLayout({
