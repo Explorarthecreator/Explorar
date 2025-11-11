@@ -58,7 +58,7 @@ const Hero = () => {
         >
           <div>
             <h3 className="text-[#797C86] text-sm md:text-base lg:text-xl uppercase">
-              Software Developer
+              Frontend Engineer, Technical SUpport Developer
             </h3>
             <h1 className="text-white text-xl md:text-3xl lg:text-[58px] uppercase">
               Emmanuel ONOSE Fred-adeji
@@ -68,12 +68,16 @@ const Hero = () => {
           <p
             className={`text-[#B7B7B7] text-xs md:text-sm lg:text-lg ${karla.className}`}
           >
-            A software developer creates and maintains applications, websites,
-            or systems that meet user needs. They write and test code to ensure
-            programs work correctly and efficiently. Developers also
-            troubleshoot issues, fix bugs, and improve performance. They often
-            collaborate with teams to design new features and deliver
-            high-quality software solutions.
+            I have over two years of experience building scalable, user-focused
+            web applications. My work spans developing HRM platforms, optimizing
+            performance, and integrating advanced features like AI and
+            blockchain into financial interfaces. With a strong foundation in
+            technical support, documentation, and UI/UX collaboration, I bring
+            creativity, flexibility, and problem-solving to every project I take
+            on.
+            {/* I&apos;ve led frontend teams, mentored junior developers, and
+            collaborated across fintech, HR, and e-commerce domains to deliver
+            intuitive digital solutions. */}
           </p>
         </div>
       </div>
