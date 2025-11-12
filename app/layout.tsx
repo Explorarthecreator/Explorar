@@ -8,48 +8,39 @@ import AOSInitializer from "@/components/Aos-initializer";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "Emmanuel Fred-Adeji | Frontend Developer for Africa, US & UK",
+  title:
+    "Emmanuel Fred-Adeji - Frontend Developer | Website Developer | Building Fast, Scalable Web Applications",
   description:
-    "Frontend developer with 2+ years experience building scalable websites and web applications using Next.js, React, and TypeScript. Specialized in real estate, e-commerce, and fintech solutions for clients in Africa, the US, and the UK.",
+    "I build high-performance websites and web apps that actually convert visitors into customers. Specializing in modern React, Next.js, and TypeScript for businesses that want results, not just pretty designs.",
   keywords: [
     "frontend developer",
-    "Next.js",
-    "React",
+    "React expert",
+    "Next.js developer",
     "TypeScript",
-    "web development",
-    "Africa",
-    "US",
-    "UK",
-    "real estate",
-    "e-commerce",
-    "fintech",
-    "small business",
+    "web performance",
+    "conversion optimization",
+    "small business websites",
+    "startup developer",
+    "e-commerce development",
+    "SaaS applications",
   ],
   authors: [{ name: "Emmanuel Fred-Adeji" }],
   creator: "Emmanuel Fred-Adeji",
-  publisher: "Emmanuel Fred-Adeji",
   robots: "index, follow",
   metadataBase: new URL("https://explorar-five.vercel.app"),
-  alternates: {
-    canonical: "/",
-  },
-  icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
-  },
   openGraph: {
-    title: "Emmanuel Fred-Adeji | Frontend Developer for Africa, US & UK",
+    title:
+      "Emmanuel Fred-Adeji - Frontend Developer | Results-Driven Web Applications",
     description:
-      "Frontend developer with 2+ years experience building scalable websites and web applications using Next.js, React, and TypeScript. Specialized in real estate, e-commerce, and fintech solutions.",
+      "I build websites that work. Fast, scalable, and focused on your business goals. Let's create something that converts.",
     url: "https://explorar-five.vercel.app",
-    siteName: "Emmanuel Fred-Adeji Portfolio",
+    siteName: "Emmanuel Fred-Adeji",
     images: [
       {
         url: "https://explorar-five.vercel.app/og_image.png",
         width: 1200,
         height: 630,
-        alt: "Emmanuel Fred-Adeji - Frontend Developer Portfolio",
+        alt: "Emmanuel Fred-Adeji - Building web applications that drive business results",
       },
     ],
     locale: "en_US",
@@ -57,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emmanuel Fred-Adeji | Frontend Developer",
+    title: "Emmanuel Fred-Adeji - Frontend Developer",
     description:
-      "Building scalable web apps with Next.js, React, and TypeScript for global clients in Africa, US & UK.",
+      "Building fast, scalable web applications that help businesses grow. React • Next.js • TypeScript",
     creator: "@AdejiFred",
     images: ["https://explorar-five.vercel.app/og_image.png"],
   },
