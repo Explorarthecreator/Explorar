@@ -75,9 +75,6 @@ const Hero = () => {
             technical support, documentation, and UI/UX collaboration, I bring
             creativity, flexibility, and problem-solving to every project I take
             on.
-            {/* I&apos;ve led frontend teams, mentored junior developers, and
-            collaborated across fintech, HR, and e-commerce domains to deliver
-            intuitive digital solutions. */}
           </p>
         </div>
       </div>
