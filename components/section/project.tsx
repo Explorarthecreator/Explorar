@@ -36,19 +36,15 @@ const Project = () => {
     },
   ];
   return (
-    <div className="">
-      <ScrollStack
-        //   stackPosition="20%"
-        useWindowScroll={true}
-        itemDistance={50}
-        className=""
-      >
-        <h1 className="text-center text-3xl lg:text-6xl">Projects</h1>
+    <div className=" max-w-[1288px] m-auto space-y-9">
+      <h1 className="text-center text-3xl lg:text-6xl">Projects</h1>
 
+      <div className="space-y-10">
         {projects.map((project, index) => (
-          <ScrollStackItem
-            itemClassName="bg-white text-black lg:grid lg:grid-cols-2 lg:gap-10"
+          <div
+            className="bg-white text-black lg:grid lg:grid-cols-2 lg:gap-10 p-6 lg:p-12 rounded-xl lg:rounded-[40px] shadow-[0_0_30px_rgba(0,0,0,0.1)] box-border origin-top will-change-transform"
             key={index}
+            data-aos="zoom-in-up"
           >
             <div className="space-y-4 self-center">
               <h1 className="text-lg lg:text-3xl">{project.title}</h1>
@@ -75,9 +71,9 @@ const Project = () => {
               height={1000}
               className="hidden lg:block"
             />
-          </ScrollStackItem>
+          </div>
         ))}
-      </ScrollStack>
+      </div>
     </div>
   );
 };
