@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import ScrollStack, { ScrollStackItem } from "../ScrollStack";
 import Link from "next/link";
 import { karla } from "@/app/font";
 import { Badge } from "../ui/badge";
