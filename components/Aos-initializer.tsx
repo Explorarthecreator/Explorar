@@ -8,9 +8,8 @@ const AOSInitializer = () => {
     AOS.init({
       duration: 600,
       easing: "ease-out-sine",
-      once: true,
-      delay: 2500,
-      //   disable: "phone",
+      once: false,
+      delay: 0,
     });
 
     return () => {

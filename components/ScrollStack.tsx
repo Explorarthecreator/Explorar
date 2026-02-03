@@ -11,7 +11,7 @@ export const ScrollStackItem: React.FC<ScrollStackItemProps> = ({
   itemClassName = "",
 }) => (
   <div
-    className={`scroll-stack-card relative w-full min-h-80 max-h-180 lg:h-120 my-8 p-6 lg:p-12 rounded-xl lg:rounded-[40px] shadow-[0_0_30px_rgba(0,0,0,0.1)] box-border origin-top will-change-transform ${itemClassName}`.trim()}
+    className={`scroll-stack-card relative w-full min-h-80 max-h-auto lg:h-120 my-8 p-6 lg:p-12 rounded-xl lg:rounded-[40px] shadow-[0_0_30px_rgba(0,0,0,0.1)] box-border origin-top will-change-transform ${itemClassName}`.trim()}
     style={{
       backfaceVisibility: "hidden",
       transformStyle: "preserve-3d",
@@ -67,7 +67,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
       if (scrollTop > end) return 1;
       return (scrollTop - start) / (end - start);
     },
-    []
+    [],
   );
 
   const parsePercentage = useCallback(
@@ -77,7 +77,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
       }
       return parseFloat(value as string);
     },
-    []
+    [],
   );
 
   const getScrollData = useCallback(() => {
@@ -106,7 +106,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
         return element.offsetTop;
       }
     },
-    [useWindowScroll]
+    [useWindowScroll],
   );
 
   const updateCardTransforms = useCallback(() => {
@@ -118,13 +118,13 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
     const stackPositionPx = parsePercentage(stackPosition, containerHeight);
     const scaleEndPositionPx = parsePercentage(
       scaleEndPosition,
-      containerHeight
+      containerHeight,
     );
 
     const endElement = useWindowScroll
       ? (document.querySelector(".scroll-stack-end") as HTMLElement | null)
       : (scrollerRef.current?.querySelector(
-          ".scroll-stack-end"
+          ".scroll-stack-end",
         ) as HTMLElement | null);
 
     const endElementTop = endElement ? getElementOffset(endElement) : 0;
@@ -141,7 +141,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
       const scaleProgress = calculateProgress(
         scrollTop,
         triggerStart,
-        triggerEnd
+        triggerEnd,
       );
       const targetScale = baseScale + i * itemScale;
       const scale = 1 - scaleProgress * (1 - targetScale);
@@ -295,7 +295,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
     const cards = Array.from(
       useWindowScroll
         ? document.querySelectorAll(".scroll-stack-card")
-        : scrollerRef.current?.querySelectorAll(".scroll-stack-card") ?? []
+        : (scrollerRef.current?.querySelectorAll(".scroll-stack-card") ?? []),
     ) as HTMLElement[];
     cardsRef.current = cards;
     const transformsCache = lastTransformsRef.current;
@@ -358,7 +358,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
         willChange: "scroll-position",
       }}
     >
-      <div className="scroll-stack-inner pt-[10vh] lg:px-20 pb-20 min-h-screen">
+      <div className="scroll-stack-inner pt-[20vh] lg:px-20 pb-20 min-h-screen">
         {children}
         {/* Spacer so the last pin can release cleanly */}
         <div className="scroll-stack-end w-full h-px" />
